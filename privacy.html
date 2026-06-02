@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Note2Data</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #555;
+    --link: #0a58ca;
+    --rule: #e0e0e0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #e8e8e8;
+      --muted: #a0a0a0;
+      --link: #6ea8fe;
+      --rule: #2a2a2a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 2rem 1rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+  p, ul, ol { margin: 0.75rem 0; }
+  ul, ol { padding-left: 1.5rem; }
+  li { margin: 0.25rem 0; }
+  a { color: var(--link); }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 2rem 0;
+  }
+  .effective {
+    color: var(--muted);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  strong { font-weight: 600; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+<p class="effective">Effective date: 2026-06-02</p>
+
+<p>Note2Data ("the app", "we", "us") is a handwriting recognition app that
+turns a photo of a handwritten page into editable text, entirely on your
+device. This policy explains what data the app processes, where it goes, and
+the choices you have.</p>
+
+<p>The short version: <strong>your photos and recognized text never leave your
+phone</strong>. We do not run servers that store your data. The only data that
+leaves your device is anonymized crash reports (if you have not opted out via
+your operating system's settings) and purchase data handled by Apple or Google
+when you buy the Pro unlock. The app also downloads its recognition models once
+from our content host; that download contains no personal data.</p>
+
+<hr>
+
+<h2>1. Who we are</h2>
+<p>Note2Data is developed by Joseph Griffin
+(<a href="mailto:privacy@note2data.app">privacy@note2data.app</a>),
+based in Okinawa, Japan. There is no company behind the app, no
+employees, and no marketing or data team.</p>
+
+<h2>2. Data that stays on your device</h2>
+<p>Everything below is processed locally on your phone and never
+transmitted off-device:</p>
+<ul>
+  <li><strong>Photos of pages</strong> that you import, either via the camera
+    or your photo library.</li>
+  <li><strong>Recognized text</strong> produced by the on-device handwriting
+    recognition engine.</li>
+  <li><strong>Saved notes</strong> in your library, including any edits you
+    make in the built-in text editor and any groups you create.</li>
+  <li><strong>Read-aloud</strong> uses your device's built-in text-to-speech.
+    The app passes the note's text to the operating system's speech engine and
+    does not transmit it itself.</li>
+  <li><strong>App settings and preferences</strong>, stored using the standard
+    per-app storage provided by Android and iOS.</li>
+</ul>
+<p>Exporting a note (as PDF, plain text, or a text file) hands the file to your
+operating system's share sheet, where you choose what to do with it. The app
+itself does not upload exported files anywhere.</p>
+<p>When you uninstall the app, this data is removed by your operating
+system along with the app.</p>
+
+<h2>3. Data that leaves your device</h2>
+<p>The following limited data may leave your device:</p>
+
+<h3>Crash reports (Sentry)</h3>
+<p>If you experience a crash, the app may send a stack trace and basic
+device information (operating system version, app version, device
+model) to Sentry, a third-party error tracking service. This allows
+us to fix bugs.</p>
+
+<p>Crash reports contain:</p>
+<ul>
+  <li>Stack traces (where in the code the crash happened)</li>
+  <li>App version and build mode</li>
+  <li>Device model and operating system version</li>
+</ul>
+
+<p>Crash reports do NOT contain:</p>
+<ul>
+  <li>Your photos, recognized text, or saved notes</li>
+  <li>Personal identifiers such as your name or email</li>
+  <li>Screenshots</li>
+  <li>Location data</li>
+</ul>
+
+<p>Sentry's privacy policy is at
+<a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a>.</p>
+
+<p>You can prevent crash reports from being sent by using your operating
+system's privacy controls (for example, restricting network access for
+the app) or by uninstalling the app.</p>
+
+<h3>Recognition models (content host)</h3>
+<p>The handwriting recognition models are large (around 743 MB) and run fully
+on your device. To avoid bundling them into the app download, they are fetched
+once on first run from our content delivery host and then cached on your
+device. This is a one-way download of static model files: the app sends no
+personal data as part of it. As with any download, the host can see your
+device's IP address and which files were requested. No account or identifier
+is involved.</p>
+
+<h3>Purchase data (Apple / Google)</h3>
+<p>When you purchase the Pro unlock, the transaction is handled entirely
+by Apple (on iOS) or Google (on Android). Note2Data does not see or
+store your payment details. We receive only a confirmation that you
+own the purchase, which is used to unlock the corresponding features
+in the app.</p>
+
+<p>See Apple's privacy policy at
+<a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>
+and Google's at
+<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+
+<h2>4. Permissions</h2>
+<p>The app asks for the following operating system permissions only
+when needed:</p>
+<ul>
+  <li><strong>Camera</strong>: required to photograph a page for recognition.</li>
+  <li><strong>Photo library</strong>: required when you import an existing photo
+    of a page.</li>
+</ul>
+<p>You can revoke any of these permissions in your operating system's
+settings at any time. The corresponding features will become
+unavailable, but the rest of the app continues to work.</p>
+
+<h2>5. Children</h2>
+<p>The app does not knowingly collect any personal information from
+children. It contains no advertising, no chat, no social features,
+no third-party trackers, and no user accounts. The optional crash
+reports described above contain no information that identifies a
+specific person.</p>
+<p>If you are in the European Economic Area and your child is under 16,
+or in the United States and your child is under 13, your child may
+use the app under your supervision.</p>
+
+<h2>6. Your rights</h2>
+<p>Because Note2Data stores your photos, notes, and library entirely on
+your device, you control them directly through the app and through
+your operating system:</p>
+<ul>
+  <li><strong>Access and export</strong>: open the note in the app, or export
+    it as a PDF or text file from the library.</li>
+  <li><strong>Deletion</strong>: delete notes in the app, or uninstall the
+    app to remove all locally stored data.</li>
+</ul>
+<p>If you live in the European Economic Area (GDPR), the United Kingdom
+(UK GDPR), California (CCPA / CPRA), or Japan (APPI), you have
+specific rights regarding the limited data that does leave your
+device (crash reports). To exercise these rights, contact us at the
+email below. Note that crash reports are not linked to your personal
+identity, so in practice we may not be able to identify which reports
+came from your device.</p>
+
+<h2>7. International data transfers</h2>
+<p>Crash reports sent to Sentry, and the one-time recognition-model
+download, may be processed or served on servers located outside your
+country of residence, including in the United States or the European
+Union. Sentry is the data processor for the crash-report data.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>If we make material changes to this policy, we will update the
+effective date at the top and, where reasonable, surface a notice in
+the app. Continued use of the app after a change indicates acceptance
+of the updated policy.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy or about how Note2Data handles your data:
+<strong><a href="mailto:privacy@note2data.app">privacy@note2data.app</a></strong></p>
+
+<footer>
+Note2Data - <a href="https://note2data.app">note2data.app</a>
+</footer>
+
+</main>
+</body>
+</html>
